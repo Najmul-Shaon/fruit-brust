@@ -28,22 +28,26 @@
   </head>
   <body>
     <header class="mx-48">
+      <!-- navbar  -->
+      <!-- navbar button  -->
       <nav class="bg-[#F85559] px-12 mt-12 rounded-full">
         <div class="navbar">
           <div class="navbar-start">
             <div class="text-[#FFF] text-lg font-medium">
               <a>Home</a>
-              <a>About Us</a>
+              <a class="mx-2">About Us</a>
               <a>Shop</a>
-              <a>All Fruits</a>
+              <a class="ml-2">All Fruits</a>
             </div>
           </div>
+          <!-- navbar title and logo  -->
           <div class="navbar-center">
             <figure class="mr-2">
               <img src="images/logo.png" alt="" />
             </figure>
             <a class="text-[#FFF] text-4xl font-bold">Fruit Burst</a>
           </div>
+          <!-- navbar search box  -->
           <div class="navbar-end">
             <div class="form-control">
               <input
@@ -55,6 +59,54 @@
           </div>
         </div>
       </nav>
+      <!-- header banner  -->
+      <section>
+        <!-- carousel  -->
+        <div class="carousel w-full mt-14">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner1.png" class="w-full" />
+            
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/banner2.png" class="w-full" />
+
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/banner3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images/banner4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <!-- sub banner  -->
+        <div >
+
+        </div>
+      </section>
     </header>
     <!-- kajer jonno hidden use kreci  -->
     <main class="mx-48 hidden">
