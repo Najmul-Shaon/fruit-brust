@@ -30,6 +30,7 @@
       .bg-img {
         background-image: url("images/banner1.png");
         opacity: 0.7;
+        background-size: cover;
       }
     </style>
   </head>
@@ -161,7 +162,9 @@
     <main class="mx-5 lg:mx-48 mt-36">
       <!-- deal of the day  -->
       <section>
-        <div class="flex flex-col lg:flex-row items-center lg:justify-between">
+        <div
+          class="flex flex-col lg:flex-row items-center lg:justify-between hidden"
+        >
           <div>
             <h3 class="text-5xl font-extrabold text-[#121212]">
               Deal of the day
@@ -209,7 +212,7 @@
           </div>
         </div>
         <!-- deal card section  -->
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-12">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-12 hidden">
           <!-- card 01  -->
           <div class="card bg-base-100 rounded-lg border-2 pb-6">
             <figure class="px-10 pt-10">
@@ -484,27 +487,27 @@
           </div>
         </div>
         <div class="text-center mt-12">
-          <button class="btn text-xl text-[#FFF] font-extrabold bg-[#F85559]">
+          <button
+            class="btn text-xl text-[#FFF] font-extrabold bg-[#F85559] hidden"
+          >
             Shop All
           </button>
         </div>
       </section>
       <!-- meet the team section  -->
-      <section class="mt-36 bg-img px-12 py-24 rounded-lg hidden">
+      <section class="mt-36 bg-img px-12 py-24 rounded-lg">
         <div>
           <h3 class="text-center text-5xl font-extrabold text-[#FFF]">
             Meet the team
           </h3>
-          <p
-            class="mt-6 text-center text-[#FFF] px-24 font-medium text text-base"
-          >
+          <p class="mt-6 text-center text-[#FFF] font-medium text text-base">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
             ipsam, quod eaadipisicing elit. Facilis ipsam, quod ea corrupti
             reiciendis expedita.
           </p>
         </div>
         <!-- meet the team card  -->
-        <div class="grid grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
           <!-- card 01  -->
           <div class="flex flex-col items-center mt-12">
             <figure>
