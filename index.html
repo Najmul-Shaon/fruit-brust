@@ -35,13 +35,48 @@
     </style>
   </head>
   <body>
-    <header class="mx-48">
+    <header class="mx-5 lg:mx-48">
       <!-- navbar  -->
       <!-- navbar button  -->
-      <nav class="bg-[#F85559] px-12 mt-12 rounded-full hidden">
-        <div class="navbar">
-          <div class="navbar-start">
-            <div class="text-[#FFF] text-lg font-medium">
+      <nav class="bg-transparent lg:bg-[#F85559] px-12 mt-12 rounded-full">
+        <div
+          class="navbar flex flex-row-reverse lg:flex lg:flex-row lg:justify-evenly"
+        >
+          <div class="w-6/12 lg:w-4/12">
+            <!-- <div class="navbar-start"> -->
+            <!-- ****************************************************************** -->
+            <div class="block lg:hidden">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
+                </label>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- ****************************************************************** -->
+            <!-- this div for large device  -->
+            <div class="text-[#FFF] text-lg font-medium hidden lg:block">
               <a>Home</a>
               <a class="mx-2">About Us</a>
               <a>Shop</a>
@@ -49,15 +84,20 @@
             </div>
           </div>
           <!-- navbar title and logo  -->
-          <div class="navbar-center">
+          <div class="w-6/12 lg:w-4/12">
+            <!-- <div class="navbar-center"> -->
             <figure class="mr-2">
               <img src="images/logo.png" alt="" />
             </figure>
-            <a class="text-[#FFF] text-4xl font-bold">Fruit Burst</a>
+            <a
+              class="text-[#121212] lg:text-[#FFF] text-xl lg:text-4xl font-bold"
+              >Fruit Burst</a
+            >
           </div>
           <!-- navbar search box  -->
-          <div class="navbar-end">
-            <div class="form-control">
+          <div class="">
+            <div class="hidden lg:inline-block w-4/12">
+              <!-- <div class="hidden lg:inline-block navbar-end"> -->
               <input
                 type="text"
                 placeholder="Search Here"
